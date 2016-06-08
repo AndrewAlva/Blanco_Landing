@@ -25,13 +25,15 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+    background: #9a9999;
+    color: #fff;
+    text-shadow: 1px 1px 1px #888;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+    background: #9a9999;
+    color: #fff;
+    text-shadow: 1px 1px 1px #888;
 }
 
 /*
@@ -95,13 +97,273 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*/// CUSTOM FONT AVENIR ///*/
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Roman.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Avenir-Roman.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Avenir-Roman.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Avenir-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Avenir-Roman.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+div, header, img, section, a, footer{
+    -webkit-transition: all .6s ease-in-out;
+       -moz-transition: all .6s ease-in-out;
+        -ms-transition: all .6s ease-in-out;
+         -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+}
+
+#fullWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Avenir', helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 12pt;
+    color: #9a9999;
+}
+
+    #mainContainer{
+        position: absolute;
+        width: 1040px;
+        /*height: 2235px;*/
+        margin: auto;
+        left: 0; right: 0;
+        margin-bottom: 200px;
+        overflow: hidden;
+    }
+
+/* TITLE CLASSES */
+        #titleBlanco{
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            zoom: 1; /* Fix for IE7 */
+            *display: inline; /* Fix for IE7 */
+            width: 170px;
+            height: 41px;
+            margin-top: 215px;
+            margin-bottom: 40px;
+        }
+            #titleBlanco img{
+                width: 100%;
+            }
+/* END TITLE */
+
+/* BODY CLASSES */
+        #bodyBlanco{
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            zoom: 1; /* Fix for IE7 */
+            *display: inline; /* Fix for IE7 */
+            width: 100%;
+        }
+
+            .halfColumns{
+                position: relative;
+                width: 50%;
+                height: 100%;
+                float: left;
+                display: inline-block;
+                vertical-align: top;
+                zoom: 1; /* Fix for IE7 */
+                *display: inline; /* Fix for IE7 */
+            }
+
+                #mainLeftColumn .firstImagePack{
+                    height: 379px;
+                    margin-bottom: 120px;
+                }
+
+                    #letterProject{
+                        margin-bottom: 10px;
+                    }
 
 
 
+                #mainRightColumn .textSlots{
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                #mainRightColumn .firstTextSlot{
+                    height: 245px;
+                }
+
+                    #mainRightColumn .firstTextSlot .innerTextSlot{
+                        position: absolute;
+                        width: 100%;
+                        height: 82px;
+                        margin: auto;
+                        top: 0; bottom: 0;
+                    }
+                    #mainRightColumn .firstTextSlot .innerTextSlot .underscore{
+                        position: absolute;
+                        width: 20px;
+                        height: 1px;
+                        margin: auto;
+                        bottom: -20px;
+                        left: 0; right: 0;
+                        border-bottom: 1px solid #9a9999;
+                    }
+
+                        .textSlots p{
+                            font-size: 9pt;
+                            margin: 9px;
+                        }
+
+                        #mainRightColumn .midSpacing{
+                            letter-spacing: 9px;
+                        }
+                        #mainRightColumn .longSpacing{
+                            letter-spacing: 12px;
+                        }
+
+
+                #mainRightColumn .firstImagePack{
+                    height: 378px;
+                }
+
+
+                #mainRightColumn .secondTextSlot{
+                    height: 350px;
+                }
+
+                    #mainRightColumn .secondTextSlot .innerTextSlot{
+                        position: absolute;
+                        width: 100%;
+                        height: 20px;
+                        margin: auto;
+                        top: 0; bottom: 0;
+                    }
+
+                        #mainRightColumn .secondTextSlot .innerTextSlot p{
+                            letter-spacing: 8px;
+                            font-size: 11pt;
+                        }
+/* END BODY */
+
+/* FOOTER CLASSES */
+        #footBlanco{
+            position: relative;
+            width: 100%;
+            height: 175px;
+        }
+
+            #footBlanco .innerFoot{
+                position: absolute;
+                width: 100%;
+                height: 75px;
+                margin: auto;
+                top: 0; bottom: 0;
+            }
+
+                #footBlanco a{
+                    color: #9a9999;
+                    text-align: right;
+                    text-decoration: none;
+                    display: block;
+                    font-size: 11pt;
+                    letter-spacing: 5pt;
+                    line-height: 1.3em;
+
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                    filter: alpha(opacity=100);
+                    -moz-opacity: 1;
+                    -khtml-opacity: 1;
+                    opacity: 1;
+                }
+                    #footBlanco a:hover{
+                        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+                        filter: alpha(opacity=50);
+                        -moz-opacity: 0.5;
+                        -khtml-opacity: 0.5;
+                        opacity: 0.5;
+                    }
+
+                #igLink{
+                    margin-top: 15px;
+                }
+/* END FOOTER */
 
 
 
+/* RESPONSIVE CLASSES */
+    @media (max-width: 1039px){
+        #mainContainer{
+            width: 520px;
+        }
 
+            #mainLeftColumn, #mainRightColumn{
+                width: 100%;
+            }
+    }
+
+    @media (max-width: 550px){
+        #mainContainer{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+            #titleBlanco{
+                width: 105px;
+                height: 25px;
+                margin-top: 35px;
+                margin-bottom: 15px;
+            }
+
+                #mainLeftColumn .firstImagePack, #mainRightColumn .firstImagePack{
+                    height: 218px;
+                    margin-bottom: 5px;
+                }
+
+                    #mainLeftColumn img, #mainRightColumn img{
+                        width: 145px;
+                    }
+
+
+                #mainRightColumn .firstTextSlot{
+                    height: 175px;
+                }
+
+                    .textSlots p{
+                        font-size: 8pt;
+                        margin: 8px;
+                    }
+
+                #mainRightColumn .secondTextSlot{
+                    height: 150px;
+                    margin-bottom: 5px;
+                }
+
+                    #mainRightColumn .secondTextSlot .innerTextSlot{
+                        height: 35px;
+                    }
+
+
+            #footBlanco .halfColumns{
+                width: 295px;
+            }
+
+                #footBlanco .halfColumns .innerFoot a{
+                    margin-bottom: 10px;
+                }
+
+                #igLink{
+                    margin-top: 45px;
+                }
+    }
+/* END RESPONSIVE */
 
 
 
