@@ -299,74 +299,168 @@ div, header, img, section, a, p, span, footer{
 
 
 /* RESPONSIVE CLASSES */
-    @media (max-width: 1039px){
+    @media (max-width: 1079px){
         #mainContainer{
             width: 520px;
+            margin-bottom: 0;
         }
 
-            #mainLeftColumn, #mainRightColumn{
-                width: 100%;
+            #titleBlanco{
+                width: 105px;
+                height: 25px;
+                margin-top: 105px;
+                margin-bottom: 15px;
             }
 
-                .footLinks{
-                    font-size: 9pt;
+                #mainLeftColumn .firstImagePack, #mainRightColumn .firstImagePack{
+                    height: 188px;
+                }
+                #mainLeftColumn .firstImagePack{
+                    margin-bottom: 60px;
+                }
+
+                    #mainLeftColumn img, #mainRightColumn img{
+                        width: 125px;
+                    }
+
+
+                #mainRightColumn .firstTextSlot{
+                    height: 120px;
+                }
+                    #mainRightColumn .firstTextSlot .innerTextSlot{
+                        height: 50px;
+                    }
+
+                        #mainRightColumn .midSpacing{
+                            letter-spacing: 7px;
+                        }
+                        #mainRightColumn .longSpacing{
+                            letter-spacing: 8px;
+                        }
+
+                        .textSlots p{
+                            font-size: 6pt;
+                            margin: 4px;
+                        }
+
+                        #mainRightColumn .firstTextSlot .innerTextSlot .underscore{
+                            bottom: -5px;
+                        }
+
+                #mainRightColumn .secondTextSlot{
+                    height: 180px;
+                    margin-bottom: 5px;
+                }
+
+                    #mainRightColumn .secondTextSlot .innerTextSlot{
+                        height: 20px;
+                    }
+
+                        #mainRightColumn .secondTextSlot .innerTextSlot p{
+                            letter-spacing: 3px;
+                            font-size: 6pt;
+                        }
+
+
+            
+
+                #footBlanco .halfColumns .innerFoot a{
+                    margin-bottom: 0px;
+                    font-size: 8pt;
+                }
+
+                #igLink{
+                    margin-top: 12px;
                 }
     }
 
     @media (max-width: 550px){
         #mainContainer{
             width: 300px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
             #titleBlanco{
-                width: 105px;
+                width: 55px;
                 height: 25px;
-                margin-top: 35px;
-                margin-bottom: 15px;
+                margin-top: 65px;
+                margin-bottom: 10px;
             }
 
-                #mainLeftColumn .firstImagePack, #mainRightColumn .firstImagePack{
-                    height: 218px;
-                    margin-bottom: 5px;
+                #mainLeftColumn img, #mainRightColumn img{
+                    width: 70px;
                 }
 
-                    #mainLeftColumn img, #mainRightColumn img{
-                        width: 145px;
-                    }
+                #mainLeftColumn .firstImagePack, #mainRightColumn .firstImagePack{
+                    height: 105px;
+                }
 
+                #mainLeftColumn .firstImagePack{
+                    margin-bottom: 30px;
+                }
 
                 #mainRightColumn .firstTextSlot{
-                    height: 175px;
+                    height: 75px;
                 }
 
                     .textSlots p{
-                        font-size: 8pt;
-                        margin: 8px;
+                        font-size: 5pt;
+                        margin: 1px;
                     }
 
-                #mainRightColumn .secondTextSlot{
-                    height: 150px;
-                    margin-bottom: 5px;
-                }
+                    #mainRightColumn .midSpacing{
+                        letter-spacing: 5px;
+                    }
+                    #mainRightColumn .longSpacing{
+                        letter-spacing: 6px;
+                    }
 
-                    #mainRightColumn .secondTextSlot .innerTextSlot{
+                    #mainRightColumn .firstTextSlot .innerTextSlot{
                         height: 35px;
                     }
 
+                    #mainRightColumn .firstTextSlot .innerTextSlot .underscore{
+                        width: 10px;
+                    }
 
-            #footBlanco .halfColumns{
-                width: 295px;
-            }
 
-                #footBlanco .halfColumns .innerFoot a{
-                    margin-bottom: 10px;
-                    font-size: 8pt;
+                #mainRightColumn .secondTextSlot{
+                    height: 80px;
                 }
 
-                #igLink{
-                    margin-top: 45px;
+                    #mainRightColumn .secondTextSlot .innerTextSlot{
+                        height: 10px;
+                    }
+
+                        #mainRightColumn .secondTextSlot .innerTextSlot p{
+                            letter-spacing: 2px;
+                            font-size: 5pt;
+                        }
+
+
+
+                .footLinks{
+                    letter-spacing: 1pt;
                 }
+
+                    #footBlanco{
+                        height: 85px;
+                    }
+
+                        #footBlanco .innerFoot{
+                            height: 30px;
+                        }
+
+                            #footBlanco .halfColumns .innerFoot a{
+                                font-size: 5pt;
+                            }
+
+                            #igLink{
+                                margin-top: 7px;
+                            }
+
+
+
     }
 /* END RESPONSIVE */
 
